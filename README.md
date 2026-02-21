@@ -307,14 +307,9 @@ To establish a new computing paradigm in which the operating system becomes an *
 
 ## 👨‍💻 Author
 
-**Ahmad Ansari**
+**Ahmad Shoaib Ansari**
+
 GitHub: [https://github.com/AhmadAnsari-006](https://github.com/AhmadAnsari-006)
-
----
-
-## 📄 License
-
-MIT License — see LICENSE file.
 
 ---
 
@@ -334,7 +329,8 @@ MIT License — see LICENSE file.
 AI‑Oriented‑OS is an experimental, forward‑looking operating system concept.
 Architecture discussions, research collaboration, and exploratory prototypes are welcome.
 
-## License
+## 📄 License
+MIT License — see LICENSE file
 This project is licensed under the Creative Commons
 Attribution–NonCommercial 4.0 International License.
 
