@@ -330,7 +330,8 @@ AI‑Oriented‑OS is an experimental, forward‑looking operating system concep
 Architecture discussions, research collaboration, and exploratory prototypes are welcome.
 
 ## 📄 License
-MIT License — see LICENSE file
+MIT License — see LICENSE file.
+
 This project is licensed under the Creative Commons
 Attribution–NonCommercial 4.0 International License.
 
