@@ -1,0 +1,23 @@
+chatbot_ai/
+
+│── main.py
+│
+├── core/
+│   ├── input_processor.py
+│   ├── dialogue_manager.py
+│   ├── memory.py
+│
+├── intent/
+│   ├── rule_based.py
+│   ├── ml_classifier.py
+│
+├── response/
+│   ├── template_engine.py
+│   ├── llm_engine.py
+│   ├── action_executor.py
+│
+├── models/
+│   └── intent_model.pkl
+│
+└── data/
+    └── user_memory.json
