@@ -1,5 +1,16 @@
 # AI‑Oriented‑OS
 
+![Status](https://img.shields.io/badge/Status-Conceptual%20Stage-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![AI](https://img.shields.io/badge/Focus-AI%20Native%20OS-purple)
+![Tech](https://img.shields.io/badge/Stack-Python%20%7C%20ML%20%7C%20LLM-orange)
+![Platform](https://img.shields.io/badge/Platform-Cross--OS-lightgrey)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
+![Maintenance](https://img.shields.io/badge/Maintained-Yes-success)
+![PRs](https://img.shields.io/badge/PRs-Open-blueviolet)
+![Stage](https://img.shields.io/badge/Development-Early%20Architecture-red)
+![Vision](https://img.shields.io/badge/Vision-Next--Gen%20Computing-informational)
+
 > **An AI‑native multimodal operating system** that unifies voice, vision, and contextual intelligence into a primary computing interface — with system‑level authority comparable to traditional operating systems, yet extended through adaptive AI cognition.
 ---
 
