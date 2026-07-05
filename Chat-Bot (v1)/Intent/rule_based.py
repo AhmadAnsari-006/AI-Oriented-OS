@@ -1,8 +1,8 @@
 intent_keywords = {
-  "greeting":["hi","hello","hey","yo"],
-  "time":["time","clock","hour","minute"],
-  "date":["day","date","weeks","months"],
-  "exit":["bye","exit","quit","retire"],
+  "greeting":["hi","hello","hey","yo",],# intent_name : keywords_list
+  "time":["time","clock",],
+  "date":["day","date","weeks"],
+  "exit":["bye","exit","quit"],
   "history":["history"]
 }
 priority = {
@@ -11,10 +11,10 @@ priority = {
   "date":4,
   "exit":3,
   "history":1,
-  "unknown":0.0
+  "unknown":0.1
 }
-score = {
-  "greeting":0,
+score = { #intent_name : score_values
+  "greeting":0, 
   "time":0,
   "date":0,
   "exit":0,

@@ -1,10 +1,13 @@
 from Intent import rule_based
+from Response import template_engine as te
 import string
 count = 0
 max_score = 0
 unproccessed_messages = {}
 proccessed_messages = {}
 temp = {}
+max_intents = []
+temp_intent=[]
 
 def get_input():
   global count, unproccessed_messages, proccessed_messages, temp
@@ -15,10 +18,12 @@ def get_input():
   clean_message = remove_punctuation(message.lower())
   clean_message= clean_spaces(clean_message)
   update_memory_processed(clean_message)
+  
   detect_intent(clean_message)
   update_score(rule_based.score)
   get_priority(temp)
-  print(rule_based.score)
+  check_confidence(max_intents)
+  return_intent(temp_intent)
 
 def clean_spaces(text):
   clean_message = " ".join(text.split())
@@ -65,12 +70,30 @@ def update_score(score):
   return temp
 
 def get_priority(temp):
-  max_intents = []
   for intent_name, score_value in temp.items():
     if temp:
       max_score = max(temp.values())
       if score_value == max_score :
         max_intents.append(intent_name)
-      else:
-        max_intents.append("unknown")
   return max_intents
+
+def check_confidence(maximum_intents):
+  for intents in maximum_intents:
+    matches = rule_based.score[intents]
+    total_keywords_for_intent = len(rule_based.intent_keywords[intents])
+    confidence = matches/total_keywords_for_intent
+    temp_intent.append({
+      "intent": intents,
+      "confidence":confidence
+    })  
+  
+def return_intent(temp_intent):
+  max_confidence = 0
+  for confidence in temp_intent :
+    if confidence['confidence'] > max_confidence :
+      max_confidence = confidence['confidence']
+  for dictionary in temp_intent:
+    if dictionary.get('confidence') == max_confidence:
+      rule_based.intent_list.append(dictionary)
+  print(rule_based.intent_list) 
+  print(te.response)

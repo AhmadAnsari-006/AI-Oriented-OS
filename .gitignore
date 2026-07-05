@@ -1,0 +1,92 @@
+__pycache__/
+
+# Byte-compiled / cached
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+pip-wheel-metadata/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.pytest_cache/
+htmlcov/
+coverage.xml
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+*.manifest
+*.spec
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter
+.ipynb_checkpoints
+
+# Environment variables / secrets
+.env
+.env.*
+env.local
+secrets/
+credentials.json
+
+# Data and user files
+# Ignore user memory and other runtime data stored in Data folders
+**/Data/*.json
+**/Data/*.db
+user_memory.json
+*/user_memory.json
+
+# Model artifacts
+*.pt
+*.pth
+*.bin
+*.ckpt
+
+# Docker
+docker-compose.override.yml
+*.tar
+
+# Misc
+*.bak
+*.swp
+*.tmp
+*.orig
+
+# Windows shortcut files
+*.lnk
+
+# Keep these project files under version control:
+# - requirements.txt
+# - Dockerfile
+# - README*.md
