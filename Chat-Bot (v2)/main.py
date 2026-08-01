@@ -37,15 +37,15 @@ def main():
     
     while True:
         # Prompt as per legacy code structure
-        question = input("Do you want to see Chat History? (yes/quit/no): ").strip().lower()
+        '''question = input("Do you want to see Chat History? (yes/quit/no): ").strip().lower()
         if question == "yes":
             input_processor.show_history()
         elif question in ["quit", "exit"]:
             print("\nExiting AI-Oriented-OS Console. Goodbye! 👋")
             break
-        else:
+        else:'''
             # Runs get_input() which prompts 'USER: ' to read the system command
-            input_processor.get_input()
+        input_processor.get_input()
 
 if __name__ == '__main__':
     try:
